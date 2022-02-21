@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ElectricityBillingSystem.jnlp">
+  <information>
+    <title>ElectricityBillingSystem</title>
+    <vendor>jridu</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ElectricityBillingSystem.jar" size="84494" download="eager" />
+    <jar href="lib\TrayTester.jar" size="52070" download="eager" />
+    <jar href="lib\fontawesomefx-8.2.jar" size="180341" download="eager" />
+    <jar href="lib\jfoenix-8.0.4.jar" size="2487326" download="eager" />
+    <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
+    <jar href="lib\mysql-connector-java-5.0.0-beta-bin.jar" size="474964" download="eager" />
+    <jar href="lib\poi-3.9-20121203.jar" size="1869113" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ElectricityBillingSystem" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="model.Main"  name="ElectricityBillingSystem" />
+  <update check="always"/>
+</jnlp>

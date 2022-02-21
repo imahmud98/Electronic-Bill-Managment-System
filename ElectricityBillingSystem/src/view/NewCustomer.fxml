@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="1160.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewCustomerController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="1124.0">
+         <children>
+            <Label prefHeight="63.0" prefWidth="362.0" text="Customer Signup" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <JFXTextField fx:id="Name" layoutX="117.0" layoutY="160.0" prefHeight="35.0" prefWidth="195.0" promptText="Name" />
+      <JFXTextField fx:id="Address" layoutX="117.0" layoutY="258.0" prefHeight="35.0" prefWidth="195.0" promptText="Address" />
+      <JFXTextField fx:id="COntact" layoutX="117.0" layoutY="376.0" prefHeight="35.0" prefWidth="195.0" promptText="Contact No." />
+      <JFXTextField fx:id="MeterNo" layoutX="111.0" layoutY="477.0" prefHeight="35.0" prefWidth="195.0" promptText="Meteer No." />
+      <JFXTextField fx:id="Email" layoutX="429.0" layoutY="160.0" prefHeight="35.0" prefWidth="195.0" promptText="Email" />
+      <ChoiceBox fx:id="GenderBox" layoutX="436.0" layoutY="276.0" prefHeight="25.0" prefWidth="195.0" />
+      <JFXTextField fx:id="PinCode" layoutX="436.0" layoutY="376.0" prefHeight="35.0" prefWidth="195.0" promptText="Pin Code" />
+      <JFXTextField fx:id="Age" layoutX="443.0" layoutY="477.0" prefHeight="35.0" prefWidth="195.0" promptText="Age" />
+      <Label layoutX="117.0" layoutY="94.0" prefHeight="35.0" prefWidth="113.0" text="Customer ID:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerID" layoutX="233.0" layoutY="94.0" prefHeight="35.0" prefWidth="145.0" text="Auto Generated">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="443.0" layoutY="599.0" mnemonicParsing="false" onAction="#NewUser" prefHeight="43.0" prefWidth="181.0" style="-fx-background-color: #331333;" text="Add" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

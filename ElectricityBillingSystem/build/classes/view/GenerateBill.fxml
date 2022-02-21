@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="borderpane" prefHeight="664.0" prefWidth="1160.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GenerateBillController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="25.0" prefWidth="218.0" text="Enter Customer Details :" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="89.0" prefWidth="1124.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="282.0">
+                     <children>
+                        <JFXTextField fx:id="customerID" prefHeight="25.0" prefWidth="229.0" promptText="Customer ID" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="53.0" prefWidth="294.0">
+                     <children>
+                        <ChoiceBox fx:id="monthBox" prefHeight="25.0" prefWidth="181.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="746.0" layoutY="10.0" prefHeight="89.0" prefWidth="189.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#GenerateBill" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: #331333;" text="Generate Bill" textFill="WHITE" HBox.hgrow="ALWAYS">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="generate_bill_info" prefHeight="440.0" prefWidth="1124.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="col_name" prefWidth="355.0" text="Customer Name" />
+                      <TableColumn fx:id="col_id" prefWidth="283.0" text="Customer ID" />
+                        <TableColumn fx:id="col_generatebill" prefWidth="475.0" text="Generated Bill" />
+                    </columns>
+                  </TableView>
+               </children>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="73.0" prefWidth="1124.0">
+         <children>
+            <Label prefHeight="55.0" prefWidth="428.0" text="Electricity Bill" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

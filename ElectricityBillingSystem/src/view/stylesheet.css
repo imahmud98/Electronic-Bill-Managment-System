@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 10, 2020, 2:34:24 PM
+    Author     : jridu
+*/
+.parent{
+    -fx-background-color: transparent;
+}
+
+
+.tf_box{
+    -fx-background-color:transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.tf{
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: #cccccc; /* edited this */
+}
+
+.border{
+    -fx-border-color: #F4F4F4;  
+    -fx-border-width: 45px 0px 0px 0px;
+}
+
+.profileborder{
+    -fx-background-color: #311231;
+    -fx-border-color: #311231;
+    -fx-border-width: 87px 0px 0px 0px;
+}

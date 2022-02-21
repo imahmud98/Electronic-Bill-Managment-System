@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 12, 2020, 7:18:45 PM
+    Author     : jridu
+*/
+
+.sidebar-user-btn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1; 
+}
+
+
+.sidebar-btn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+}
+
+.sidebar-btn:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: #b8b1b1;
+    -fx-border-color: rgb(22,169,250);
+    -fx-border-width: 0px 0px 0px 3px;   
+}
+
+.sidebar-btn-icon{
+    -fx-fill: #b8b1b1;
+}
+
+.menu-bar-btns{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #999;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.menu-bar-btns:hover{
+    -fx-background-color: #331333;
+}
+
+
+.menu-bar-btns-icon{
+    -fx-fill: #cccccc;
+}
+
+
+.menu-bar-btns:hover.menu-bar-btns-icon{
+    -fx-fill : #fff;
+}
+
+
